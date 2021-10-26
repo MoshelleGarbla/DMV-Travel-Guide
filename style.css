@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 15vh;
+    background-color: lightcoral;
+}
+
+
+.nav-links{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-left: auto;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+}
+
+
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+}
+.landing{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landing h1{
+    color: lightcoral;
+    font-size: 30px;
+}
+@media screen and (max-width: 900px) {
+    .line{
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px;
+    }
+    nav{
+        position: relative;   
+    }
+    .hamgurger{ 
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%,-50%);
+        z-index: 1;
+        cursor: pointer;
+    }
+    .nav-links{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: lightcoral;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-in-out;
+        flex-direction: column;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-links.open{
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(1200px at 90% -10%);
+        pointer-events: all;
+
+    }
+    li.fade{
+        opacity: 1;
+    }
+
+    .logo {
+
+        text-decoration: none;
+        color: #fff;
+        font-weight: 300;
+        font-size: 30px;
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        
+    }
+
+
+}
