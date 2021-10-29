@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+.logo h1{
+  position: relative;
+  top: 80px;
+  text-decoration: none;
+   color: #fff;
+   font-weight: 800;
+   font-size: 30px;
+    
+}
+
+
 nav{
     height: 15vh;
     background-color: lightcoral;
@@ -78,19 +89,7 @@ nav{
         opacity: 1;
     }
 
-    .logo {
-
-        text-decoration: none;
-        color: #fff;
-        font-weight: 300;
-        font-size: 30px;
-        position: absolute;
-        left: 5%;
-        top: 50%;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        
-    }
+    
 
 
 }
