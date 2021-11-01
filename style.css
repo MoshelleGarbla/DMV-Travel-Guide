@@ -51,6 +51,7 @@ nav{
     font-size: 100px;
     
 }
+
 .image{
     color: #03071e;
     font-size: 30px;
@@ -59,12 +60,24 @@ nav{
     margin: 5px 50px 10px 50px;
 
 }
-.caption{
-    display: block;
-    position: relative;
-    
-}
 
+.caption {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 14px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
+  position: absolute;
+  top: 70%;
+  width: 60%;
+  
+  color:#fff;
+   
+     
+   }
+   
 
 @media screen and (max-width: 900px) {
     .line{
