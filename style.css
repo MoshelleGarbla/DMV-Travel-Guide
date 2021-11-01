@@ -2,8 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+
 
 .logo h1{
   position: relative;
@@ -39,16 +41,31 @@ nav{
     font-weight: 400;
     font-size: 20px;
 }
-.landing{
+.landing h1{
     height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 100px;
+    
 }
-.landing h1{
+.image{
     color: #03071e;
     font-size: 30px;
+    background-image: url("https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?cs=srgb&dl=pexels-stephan-seeber-1261728.jpg&fm=jpg");
+    background-position: center;
+    margin: 5px 50px 10px 50px;
+
 }
+.caption{
+    display: block;
+    position: relative;
+    
+}
+
+
 @media screen and (max-width: 900px) {
     .line{
         width: 30px;
@@ -92,6 +109,11 @@ nav{
    .logo h1{
        position: absolute;
        top: 30%;
+   }
+   .landing h1{
+       position: relative;
+       left: 5%;
+
    }
 
 }
