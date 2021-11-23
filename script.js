@@ -1,5 +1,5 @@
-const hamburger =document.querySelector(".hamgurger");
-const navlinks =document.querySelector(".nav-links");
+const hamburger=document.querySelector(".hamgurger");
+const navlinks=document.querySelector(".nav-links");
 const links=document.querySelectorAll(".nav-links li");
 
 hamburger.addEventListener("click",()=>{
@@ -8,3 +8,9 @@ hamburger.addEventListener("click",()=>{
         link.classList.toggle("fade")
     })
 })
+
+
+
+
+
+

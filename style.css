@@ -3,53 +3,69 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+
+html{
+    overflow-x: hidden
 }
 
 
 
 .logo h1{
   position: relative;
-  top: 80px;
+  top: 6px;
+  bottom: 70px;
+  left: 40px;
   text-decoration: none;
   color: #03071e;
-  font-weight: 800;
- font-size: 30px;
-    
+  font-weight: bolder;
+  font-size: 30px;
+  margin: 10px;
+ background-color: powderblue;
 }
 
 
-nav{
-    height: 15vh;
+header{
+    height: 10vh;
     background-color: #fff;
-}
+    position: absolute;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    width: 100%;
+ }
 
 
 .nav-links{
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-    margin-left: auto;
-    height: 100%;
-    width: 50%;
-    align-items: center;
+color: black; 
+margin: 10px;
+position: relative;
+left: 350px;
+background-color: #fff;
+display: flex;
+list-style-type: none;
+top: 10px;
 }
 
 
 .nav-links li a{
-    text-decoration: none;
-    color: #03071e;
-    font-weight: 400;
-    font-size: 20px;
+color: #03071e;
+text-decoration: none;
+margin: 10px;
+padding-right: 16px;
+background-color: pink;      
 }
+
 .landing h1{
-    height: 90vh;
+    height: 50vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-left: 260px;
     color: #fff;
     font-weight: bolder;
     font-size: 100px;
-    
+       
 }
 
 .image{
@@ -57,38 +73,41 @@ nav{
     font-size: 30px;
     background-image: url("https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?cs=srgb&dl=pexels-stephan-seeber-1261728.jpg&fm=jpg");
     background-position: center;
-    margin: 5px 50px 10px 50px;
+    text-decoration: none;
+    height: 60vh;
 
 }
 
 .caption {
-  display: block;
   font-family: 'Playfair Display', serif;
-  font-size: 14px;
+  font-size: 20px;
   font-style: italic;
   line-height: 14px;
-  margin: 10px 10px 10px 10px;
-  padding: 10px;
+  margin: 10px 10px;
+  padding: 10px; 
   position: absolute;
-  top: 70%;
-  width: 60%;
-  
+  top: 33%;
+  width: 100%;
+  left: 0px;
   color:#fff;
-   
-     
+  line-height: 1.5;
+ 
    }
+
    
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1400px){
     .line{
         width: 30px;
         height: 3px;
         background-color: #03071e;
         margin: 5px;
     }
+
     nav{
         position: relative;   
     }
+
     .hamgurger{ 
         position: absolute;
         right: 5%;
@@ -98,7 +117,7 @@ nav{
         cursor: pointer;
     }
     .nav-links{
-        position: fixed;
+        position: relative;
         height: 100vh;
         width: 100%;
         background-color: #fff;
@@ -109,13 +128,14 @@ nav{
     }
     .nav-links li{
         opacity: 0;
+     
     }
     .nav-links.open{
         clip-path: circle(100px at 90% -10%);
         -webkit-clip-path: circle(1200px at 90% -10%);
         pointer-events: all;
-
     }
+
     li.fade{
         opacity: 1;
     }
@@ -129,4 +149,32 @@ nav{
 
    }
 
+  .landing h1{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 100px; 
 }
+.caption {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 14px;
+    margin: 10px 10px;
+    padding: 10px;
+    position: absolute;
+    top: 74%;
+    width: 60%;
+    left: 100px;
+    color:#fff;
+    line-height: 1.5;
+     }
+
+   
+
+}
+
